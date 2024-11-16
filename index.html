@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <!-- ページのタイトルを設定 -->
+  <title>東京都3次元点群データ（3D Tiles）</title>
+  <!-- 文字エンコーディングをUTF-8に設定 -->
+  <meta charset="UTF-8">
+  <!-- ビューポートの設定。レスポンシブ対応のため -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MapLibre GL JSのスクリプトを読み込む -->
+  <script src='https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js'></script>
+  <!-- MapLibre GL JSのスタイルシートを読み込む -->
+  <link href='https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css' rel='stylesheet' />
+  <!-- PMTilesのスクリプトを読み込む（地図データの読み込み用） -->
+  <script src="https://unpkg.com/pmtiles@2.11.0/dist/index.js"></script>
+  <!-- Deck.glのスクリプトを読み込む（3Dレンダリング用） -->
+  <script src="https://unpkg.com/deck.gl@^8.9.0/dist.min.js"></script>
+  <!-- 外部スタイルシートを読み込む -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- 地図表示用のdiv要素 -->
+  <div id="map"></div>
+  <!-- メインのJavaScriptファイルを読み込む -->
+  <script src="main.js"></script>
+  </script>
+</body>
+
+</html>
