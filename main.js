@@ -76,7 +76,7 @@ map.on("load", () => {
     minzoom: 1,
     maxzoom: 18,
     tiles: [
-      "https://xs489works.xsrv.jp/raster-tiles/gsi/gsi-dem-terrain-rgb/{z}/{x}/{y}.png",
+      "https://shi-works.com/raster-tiles/gsi/gsi-dem-terrain-rgb/{z}/{x}/{y}.png",
     ],
     tileSize: 256,
     attribution:
@@ -123,7 +123,7 @@ map.on("load", () => {
       // 3次元点群データ（3D Tiles）を表示するレイヤーを追加
       new deck.Tile3DLayer({
         id: "pc-3dtiles", // レイヤーIDを設定
-        data: "https://shiworks.xsrv.jp/3dtiles/toyko-23ku-pc/tokyo-tower/tileset.json", // 3D TilesのURL
+        data: "https://shi-works.com/3dtiles/toyko-23ku-pc/tokyo-tower/tileset.json", // 3D TilesのURL
         opacity: 1, // レイヤーの不透明度を設定（1は完全に不透明）
         pointSize: 1, // 3次元点群データのポイントのサイズを設定
         onTileLoad: (d) => {
